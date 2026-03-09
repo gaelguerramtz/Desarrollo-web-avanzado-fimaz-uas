@@ -1,7 +1,8 @@
-?php
+<?php
     require_once 'Admin.php';
 
-    $objAdmin01 = new Admin("julio Hernandez", "riccardo@gmail.com");
+    // Instancia de Admin
+    $objAdmin01 = new Admin("rejelio  remes", "leo@gmail.com");
     
     $nombreAdmin01 = $objAdmin01->getNombre();
     $correoAdmin01 = $objAdmin01->getCorreo();
@@ -9,5 +10,5 @@
 
     echo "Nombre: $nombreAdmin01<br>";
     echo "Correo: $correoAdmin01<br>";
-    echo "Rol: $rolAdmin01<br>"
+    echo "Rol: $rolAdmin01<br>"; // Se añadió el punto y coma faltante
 ?>
