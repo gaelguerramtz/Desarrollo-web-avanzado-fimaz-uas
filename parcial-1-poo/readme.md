@@ -1,0 +1,2 @@
+Descripción del sistema
+Sistema de gestión de usuarios orientado a objetos que utiliza herencia para clasificar usuarios (Admin, Alumno) y bloques try/catch para el manejo de excepciones al validar formatos de correo electrónico.
