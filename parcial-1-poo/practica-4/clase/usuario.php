@@ -1,15 +1,19 @@
 <?php
 class Usuario {
+    // Cambiamos de private a protected para permitir herencia
     protected $nombre;
     protected $correo;
 
-    public function __construct($nombre, $correo) {
-        if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-            throw new Exception("Correo inválido: $correo");
-        }
-
+    function __construct($nombre, $correo) {
         $this->nombre = $nombre;
-        $this->correo = $correo;
+        
+        // Validación robusta usando filtro de PHP
+        if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+            $this->correo = $correo;
+        } else {
+            // Lanzamos excepción para que el bloque try/catch de index.php la capture
+            throw new Exception("El correo '$correo' no tiene un formato válido.");
+        }
     }
 
     public function getNombre() {
@@ -20,3 +24,4 @@ class Usuario {
         return $this->correo;
     }
 }
+?>

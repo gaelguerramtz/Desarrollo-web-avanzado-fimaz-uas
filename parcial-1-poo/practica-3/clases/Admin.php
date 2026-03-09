@@ -1,11 +1,10 @@
 <?php
+require_once 'Usuario.php';
 
-    require_once 'Usuario.php'; //Se importa este archivo para usar la clase Usuario como clase padre
-
-    class Admin extends Usuario {
-
-        public function getRol() {
-            return "Administrador";
-        }
+class Admin extends Usuario {
+    // Método con nombre distinto y retorno descriptivo
+    public function obtenerPuesto() {
+        return "Perfil: Administrador de Sistema";
     }
+}
 ?>
