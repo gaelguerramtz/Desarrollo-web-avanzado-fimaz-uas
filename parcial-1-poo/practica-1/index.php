@@ -1,7 +1,7 @@
 <?php
 require_once 'Usuario.php';
 
-$usuario = new Usuario("Gael Guerra", "gael.guerra@uas.edu.mx");
+$usuario = new Usuario("Mario Guerra", "mario.guerra@uas.edu.mx");
 
 echo "<h1>Practica1: POO en PHP</h1>";
 
