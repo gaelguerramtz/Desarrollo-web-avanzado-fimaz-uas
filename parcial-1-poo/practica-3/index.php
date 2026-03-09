@@ -22,8 +22,8 @@ require_once 'clases/Alumno.php';
         }
     }
 
-    $objAdmin01 = validarAdmin("Marco", "1234#gmail,com");
+    $objAdmin01 = validarAdmin("Marmaria co", "1234#gmail,com");
     $objAdmin02 = validarAdmin("manu", "manulas@gmail.com");
-    $objAlumno01 = validarAlumno("Bruno sanchez", "salas23@gmail.com", "25060021");
-    $objAlumno02 = validarAlumno("Juan Hernandez", "rodrio#gmail,com", "12345678910");
+    $objAlumno01 = validarAlumno("Bruno sanchez", "salas23@gmail.com", "250601");
+    $objAlumno02 = validarAlumno("pablo Hernandez", "rodrio#gmail,com", "12345678910");
 ?>
